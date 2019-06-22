@@ -1,0 +1,92 @@
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll.config
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.pdb
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.xml
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.csprojResolveAssemblyReference.cache
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.pdb
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.dll
+c:\users\hakan\documents\visual studio 2013\Projects\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll.config
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.pdb
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Infrastructure.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.xml
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.csprojResolveAssemblyReference.cache
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.pdb
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\CMCoreNET.dll
+D:\4. Sınıf 1. Dönem\Gerekli\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\CMCoreNET.pdb
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.csprojResolveAssemblyReference.cache
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\obj\Debug\Su_Dagitim_1_0.pdb
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll.config
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Su_Dagitim_1_0.pdb
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Infrastructure.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Net.Http.Formatting.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Http.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Http.WebHost.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\EntityFramework.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Newtonsoft.Json.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Net.Http.Formatting.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Helpers.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Http.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Http.WebHost.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Mvc.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Razor.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Deployment.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.WebPages.Razor.xml
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\MySql.Data.Entity.EF5.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\MySql.Data.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\MySql.Data.Entity.EF6.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\MySql.Web.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Simple.Data.Ado.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Simple.Data.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Simple.Data.Mysql.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Antlr3.Runtime.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Optimization.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\WebGrease.dll
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\Antlr3.Runtime.pdb
+D:\Bitirme Projesi\Su_Dagitim_1_0\Su_Dagitim_1_0\bin\System.Web.Optimization.xml

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Su_DagitimModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="arac">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plaka" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="kapasite" Type="int" Nullable="false" />
+    <Property Name="calisanid" Type="int" Nullable="false" />
+    <Property Name="siparisid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="arizatakip">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="kayittarihi" Type="date" Nullable="false" />
+    <Property Name="sonlanmatarihi" Type="date" Nullable="false" />
+    <Property Name="sirketadi" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="sirketadresi" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="sirkettelefon" Type="bigint" Nullable="false" />
+    <Property Name="sirketemail" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bantverileri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="makinaid" Type="int" Nullable="false" />
+    <Property Name="siparisid" Type="int" Nullable="false" />
+    <Property Name="grupid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="calisan">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="soyadi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="adres" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="telefon" Type="bigint" Nullable="false" />
+    <Property Name="eposta" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ünvan" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="görevaciklama" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="calismasaatleri" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="calismasaatleri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baslangicsaati" Type="time" Precision="7" Nullable="false" />
+    <Property Name="bitissaati" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="grup">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="grupno" Type="int" Nullable="false" />
+    <Property Name="calisanid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kullanici">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="soyadi" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="sifre" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="telefon" Type="bigint" Nullable="false" />
+    <Property Name="adres" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="yetki" Type="bit" Nullable="false" />
+    <Property Name="eposta" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lokasyon">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aracid" Type="int" Nullable="false" />
+    <Property Name="konumbilgisi" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="makina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kod" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="arizatakipid" Type="int" Nullable="false" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="durum" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="siparis">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="verilistarihi" Type="date" Nullable="false" />
+    <Property Name="teslimtarihi" Type="date" Nullable="false" />
+    <Property Name="adet" Type="int" Nullable="false" />
+    <Property Name="ürünid" Type="int" Nullable="false" />
+    <Property Name="kullaniciid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ürün">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="üretimtarihi" Type="date" Nullable="false" />
+    <Property Name="sonkullanmatarihi" Type="date" Nullable="false" />
+    <Property Name="boyut" Type="int" Nullable="false" />
+    <Property Name="fiyat" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_arac_calisan">
+    <End Role="calisan" Type="Self.calisan" Multiplicity="1" />
+    <End Role="arac" Type="Self.arac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="calisan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="arac">
+        <PropertyRef Name="calisanid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_arac_siparis">
+    <End Role="siparis" Type="Self.siparis" Multiplicity="1" />
+    <End Role="arac" Type="Self.arac" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="siparis">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="arac">
+        <PropertyRef Name="siparisid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bantverileri_grup">
+    <End Role="grup" Type="Self.grup" Multiplicity="1" />
+    <End Role="bantverileri" Type="Self.bantverileri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="grup">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bantverileri">
+        <PropertyRef Name="grupid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bantverileri_makina">
+    <End Role="makina" Type="Self.makina" Multiplicity="1" />
+    <End Role="bantverileri" Type="Self.bantverileri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="makina">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bantverileri">
+        <PropertyRef Name="makinaid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_bantverileri_siparis">
+    <End Role="siparis" Type="Self.siparis" Multiplicity="1" />
+    <End Role="bantverileri" Type="Self.bantverileri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="siparis">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bantverileri">
+        <PropertyRef Name="siparisid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_calisan_calismasaatleri">
+    <End Role="calismasaatleri" Type="Self.calismasaatleri" Multiplicity="1" />
+    <End Role="calisan" Type="Self.calisan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="calismasaatleri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="calisan">
+        <PropertyRef Name="calismasaatleri" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_grup_calisan">
+    <End Role="calisan" Type="Self.calisan" Multiplicity="1" />
+    <End Role="grup" Type="Self.grup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="calisan">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="grup">
+        <PropertyRef Name="calisanid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lokasyon_arac">
+    <End Role="arac" Type="Self.arac" Multiplicity="1" />
+    <End Role="lokasyon" Type="Self.lokasyon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="arac">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="lokasyon">
+        <PropertyRef Name="aracid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_makina_arizatakip">
+    <End Role="arizatakip" Type="Self.arizatakip" Multiplicity="1" />
+    <End Role="makina" Type="Self.makina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="arizatakip">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="makina">
+        <PropertyRef Name="arizatakipid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_siparis_kullanici">
+    <End Role="kullanici" Type="Self.kullanici" Multiplicity="1" />
+    <End Role="siparis" Type="Self.siparis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kullanici">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="siparis">
+        <PropertyRef Name="kullaniciid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_siparis_ürün">
+    <End Role="ürün" Type="Self.ürün" Multiplicity="1" />
+    <End Role="siparis" Type="Self.siparis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ürün">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="siparis">
+        <PropertyRef Name="ürünid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Su_DagitimModelStoreContainer">
+    <EntitySet Name="arac" EntityType="Self.arac" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="arizatakip" EntityType="Self.arizatakip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bantverileri" EntityType="Self.bantverileri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="calisan" EntityType="Self.calisan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="calismasaatleri" EntityType="Self.calismasaatleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="grup" EntityType="Self.grup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kullanici" EntityType="Self.kullanici" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lokasyon" EntityType="Self.lokasyon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="makina" EntityType="Self.makina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="siparis" EntityType="Self.siparis" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ürün" EntityType="Self.ürün" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_arac_calisan" Association="Self.FK_arac_calisan">
+      <End Role="calisan" EntitySet="calisan" />
+      <End Role="arac" EntitySet="arac" />
+    </AssociationSet>
+    <AssociationSet Name="FK_arac_siparis" Association="Self.FK_arac_siparis">
+      <End Role="siparis" EntitySet="siparis" />
+      <End Role="arac" EntitySet="arac" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bantverileri_grup" Association="Self.FK_bantverileri_grup">
+      <End Role="grup" EntitySet="grup" />
+      <End Role="bantverileri" EntitySet="bantverileri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bantverileri_makina" Association="Self.FK_bantverileri_makina">
+      <End Role="makina" EntitySet="makina" />
+      <End Role="bantverileri" EntitySet="bantverileri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_bantverileri_siparis" Association="Self.FK_bantverileri_siparis">
+      <End Role="siparis" EntitySet="siparis" />
+      <End Role="bantverileri" EntitySet="bantverileri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_calisan_calismasaatleri" Association="Self.FK_calisan_calismasaatleri">
+      <End Role="calismasaatleri" EntitySet="calismasaatleri" />
+      <End Role="calisan" EntitySet="calisan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_grup_calisan" Association="Self.FK_grup_calisan">
+      <End Role="calisan" EntitySet="calisan" />
+      <End Role="grup" EntitySet="grup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lokasyon_arac" Association="Self.FK_lokasyon_arac">
+      <End Role="arac" EntitySet="arac" />
+      <End Role="lokasyon" EntitySet="lokasyon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_makina_arizatakip" Association="Self.FK_makina_arizatakip">
+      <End Role="arizatakip" EntitySet="arizatakip" />
+      <End Role="makina" EntitySet="makina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_siparis_kullanici" Association="Self.FK_siparis_kullanici">
+      <End Role="kullanici" EntitySet="kullanici" />
+      <End Role="siparis" EntitySet="siparis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_siparis_ürün" Association="Self.FK_siparis_ürün">
+      <End Role="ürün" EntitySet="ürün" />
+      <End Role="siparis" EntitySet="siparis" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Siparis";
+    Layout = "~/Layout/AdminLayout.cshtml";
+} 
+<h2>Siparis</h2>
+<html>
+<head>
+   <title>Siparis</title>
+    @Session["veri"]
+    <script src="~/Script/aksu.js"></script>
+
+
+    <script src="~/assets/global/plugins/bootstrap-toastr/toastr.js"></script>
+    <link href="~/assets/global/plugins/bootstrap-toastr/toastr.css" rel="stylesheet" />
+</head><body>
+           <table class="table table-striped table-hover table-bordered"  >
+               <thead>
+                   <tr role="row">
+                       <th class="sorting_asc" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+										 Username
+									: activate to sort column ascending"
+                           style="width: 165px;">
+                           Sıra No
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Full Name
+									: activate to sort column ascending"
+                           style="width: 208px;">
+                           Sipariş Tarihi
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                           style="width: 111px;">
+                           teslim tarihi
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                           style="width: 111px;">
+                           E-posta
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                           style="width: 111px;">
+                           Yetki
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                           style="width: 111px;">
+                           Silme
+                       </th>
+                       <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                           style="width: 111px;">
+                           Güncelle
+                       </th>
+                   </tr>
+               </thead>
+               <tbody id="table">
+               </tbody>
+           </table>
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function (f) {
+        loadgrid();
+    });
+    function loadgrid() {
+        tgAjx("", "/Admin/GetSiparis", function (e) {
+            $('#table')[0].innerHTML = "";
+            var liste = "";
+            var k = e.toString().split("*"); liste += "<tr>";
+            for (var i = 0; i < e.length; i++) {
+           
+                liste += "<td>" + k[i].toString().split("*")+ "</td>";
+             
+            } liste += "<tr>";
+            $('#table')[0].innerHTML = liste;
+
+        });
+    }
+ 
+</script>

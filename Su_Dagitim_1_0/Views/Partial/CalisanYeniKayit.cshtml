@@ -1,0 +1,168 @@
+﻿ 
+<div class="portlet box blue" id="kayit">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-gift"></i>
+          Çalışan Kayıt
+        </div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse"></a>
+            <a href="javascript:;" onclick="loadgrid()" class="reload"></a>
+            <a href="javascript:;" onclick="vazgecs()" style="color:white;">X</a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <div class="form-horizontal">
+            <div class="form-body">
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Ad</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-font"></i></span>
+                                <input id="Ad" type="text" class="form-control " placeholder="Isim Giriniz " name="ad">
+                                <input id="Id" type="text" class="form-control " style="display:none" name="Siteadi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Soyad</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="Soyad" type="text" class="form-control " name="soy" placeholder="Soyad Giriniz">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Adres</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="Adres" type="text" class="form-control " name="adres" placeholder="Adres">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group"  >
+                        <label class="col-md-3 control-label">E-posta</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="Eposta" type="text" class="form-control " name="posta" placeholder="Eposta">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="onlynumbers">
+                        <label class="col-md-3 control-label">Telefon</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="Telefon" type="text" class="form-control " name="tel" placeholder="Telefon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="onlynumbers">
+                        <label class="col-md-3 control-label">Çalışma Saatleri </label>
+                        <select id="Saatdoldur">
+
+                        </select>
+                  
+                    </div>
+                    <div class="form-group" id="onlynumbers">
+                        <label class="col-md-3 control-label">Unvan</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="unvan" type="text" class="form-control " name="tel" placeholder="Unvan">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="onlynumbers">
+                        <label class="col-md-3 control-label">Görev Açıklama</label>
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <span class="input-group-addon "><i class="fa fa-user"></i></span>
+                                <input id="gorevac" type="text" class="form-control " name="tel" placeholder="Gorev Aciklama">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-7">
+                    <button type="button" class="btn default" data-dismiss="modal" onclick="vazgec()">Vazgeç</button>
+                    <button id="btnSend" type="button" data-dismiss="modal" class="btn blue" onclick="funcModalSend(true)"><i class="fa fa-check"></i>Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FORM-->
+</div>
+
+<script>
+    $("#onlynumbers").bind('keypress', function (e) {
+        if (e.keyCode == '9' || e.keyCode == '16') {
+            return;
+        }
+        var code;
+        if (e.keyCode) code = e.keyCode;
+        else if (e.which) code = e.which;
+        if (e.which == 46)
+            return false;
+        if (code == 8 || code == 46)
+            return true;
+        if (code < 48 || code > 57)
+            return false;
+    });
+    //Disable paste
+    $("#onlynumbers").bind("paste", function (e) {
+        e.preventDefault();
+    });
+    $("#onlynumbers").bind('mouseenter', function (e) {
+        var val = $(this).val();
+        if (val != '0') {
+            val = val.replace(/[^0-9]+/g, "")
+            $(this).val(val);
+        }
+    });
+    function funcModalSend(e) {
+        var d = new Date("July 25, '" + $("#Saatdoldur").val()+ "'");
+            var n = d.getUTCHours();
+        $('#YeniKayit').modal("hide");
+        var model = {
+            ID: $('#Id').val(),
+            Ad: $('#Ad').val(),
+            Soyad: $('#Soyad').val(),
+            Adres: $('#Adres').val(),
+            Eposta: $('#Eposta').val(),
+            Telefon: $("#Telefon").val(),
+            Unvan: $("#U").val(),
+            Gorev: $("#gorevac").val(),
+            CalismaSaatleri: $("#Saatdoldur").val()
+        };
+        if (e) {
+            tgAjx(model, "/Admin/CalisanKayit", function (g) {
+                loadgrid();
+            });
+        }
+        else {
+            tgAjx(model, "/Admin/asdasd", function () {
+                texboxtemizleme();
+            });
+        }
+
+        loadgrid();
+        texboxtemizleme();
+    }
+
+    function vazgec() {
+        $("#YeniKayit").modal("hide");
+        texboxtemizleme();
+    }
+    //function vazgecs() {
+    //    $('#tgIsTalepKayit').modal("hide");
+    //    texboxtemizleme();
+    //}
+</script>

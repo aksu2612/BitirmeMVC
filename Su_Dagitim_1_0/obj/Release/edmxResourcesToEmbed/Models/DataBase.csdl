@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Su_ManagerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Arac">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Plaka" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Kapasite" Type="Int32" />
+    <Property Name="CalisanID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Calisan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Soyad" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adres" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefon" Type="Int64" Nullable="false" />
+    <Property Name="Eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Yetki" Type="Boolean" Nullable="false" />
+    <Property Name="Unvan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CalismaSaatleri" Type="Int32" />
+    <Property Name="Gorev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Calisma">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Baslangic" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="Bitis" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Musteri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="Int64" />
+    <Property Name="Eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Su_ManagerEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Arac" EntityType="Self.Arac" />
+    <EntitySet Name="Calisan" EntityType="Self.Calisan" />
+    <EntitySet Name="Calisma" EntityType="Self.Calisma" />
+    <EntitySet Name="Musteri" EntityType="Self.Musteri" />
+  </EntityContainer>
+</Schema>

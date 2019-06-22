@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Su_DagitimModelStoreContainer" CdmEntityContainer="Su_DagitimEntities">
+    <EntitySetMapping Name="arac">
+      <EntityTypeMapping TypeName="Su_DagitimModel.arac">
+        <MappingFragment StoreEntitySet="arac">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="plaka" ColumnName="plaka" />
+          <ScalarProperty Name="kapasite" ColumnName="kapasite" />
+          <ScalarProperty Name="calisanid" ColumnName="calisanid" />
+          <ScalarProperty Name="siparisid" ColumnName="siparisid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="arizatakip">
+      <EntityTypeMapping TypeName="Su_DagitimModel.arizatakip">
+        <MappingFragment StoreEntitySet="arizatakip">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="kayittarihi" ColumnName="kayittarihi" />
+          <ScalarProperty Name="sonlanmatarihi" ColumnName="sonlanmatarihi" />
+          <ScalarProperty Name="sirketadi" ColumnName="sirketadi" />
+          <ScalarProperty Name="sirketadresi" ColumnName="sirketadresi" />
+          <ScalarProperty Name="sirkettelefon" ColumnName="sirkettelefon" />
+          <ScalarProperty Name="sirketemail" ColumnName="sirketemail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bantverileri">
+      <EntityTypeMapping TypeName="Su_DagitimModel.bantverileri">
+        <MappingFragment StoreEntitySet="bantverileri">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="makinaid" ColumnName="makinaid" />
+          <ScalarProperty Name="siparisid" ColumnName="siparisid" />
+          <ScalarProperty Name="grupid" ColumnName="grupid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calisan">
+      <EntityTypeMapping TypeName="Su_DagitimModel.calisan">
+        <MappingFragment StoreEntitySet="calisan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="eposta" ColumnName="eposta" />
+          <ScalarProperty Name="ünvan" ColumnName="ünvan" />
+          <ScalarProperty Name="görevaciklama" ColumnName="görevaciklama" />
+          <ScalarProperty Name="calismasaatleri" ColumnName="calismasaatleri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calismasaatleri">
+      <EntityTypeMapping TypeName="Su_DagitimModel.calismasaatleri">
+        <MappingFragment StoreEntitySet="calismasaatleri">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslangicsaati" ColumnName="baslangicsaati" />
+          <ScalarProperty Name="bitissaati" ColumnName="bitissaati" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="grup">
+      <EntityTypeMapping TypeName="Su_DagitimModel.grup">
+        <MappingFragment StoreEntitySet="grup">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="grupno" ColumnName="grupno" />
+          <ScalarProperty Name="calisanid" ColumnName="calisanid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kullanici">
+      <EntityTypeMapping TypeName="Su_DagitimModel.kullanici">
+        <MappingFragment StoreEntitySet="kullanici">
+          <ScalarProperty Name="eposta" ColumnName="eposta" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="yetki" ColumnName="yetki" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lokasyon">
+      <EntityTypeMapping TypeName="Su_DagitimModel.lokasyon">
+        <MappingFragment StoreEntitySet="lokasyon">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="aracid" ColumnName="aracid" />
+          <ScalarProperty Name="konumbilgisi" ColumnName="konumbilgisi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="makina">
+      <EntityTypeMapping TypeName="Su_DagitimModel.makina">
+        <MappingFragment StoreEntitySet="makina">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kod" ColumnName="kod" />
+          <ScalarProperty Name="arizatakipid" ColumnName="arizatakipid" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="siparis">
+      <EntityTypeMapping TypeName="Su_DagitimModel.siparis">
+        <MappingFragment StoreEntitySet="siparis">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="verilistarihi" ColumnName="verilistarihi" />
+          <ScalarProperty Name="teslimtarihi" ColumnName="teslimtarihi" />
+          <ScalarProperty Name="adet" ColumnName="adet" />
+          <ScalarProperty Name="ürünid" ColumnName="ürünid" />
+          <ScalarProperty Name="kullaniciid" ColumnName="kullaniciid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ürün">
+      <EntityTypeMapping TypeName="Su_DagitimModel.ürün">
+        <MappingFragment StoreEntitySet="ürün">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="üretimtarihi" ColumnName="üretimtarihi" />
+          <ScalarProperty Name="sonkullanmatarihi" ColumnName="sonkullanmatarihi" />
+          <ScalarProperty Name="boyut" ColumnName="boyut" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

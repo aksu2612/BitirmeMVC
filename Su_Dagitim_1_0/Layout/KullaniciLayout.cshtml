@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
+Version: 4.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Ana Sayfa</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="../assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html">
+                </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN PAGE ACTIONS -->
+            <!-- DOC: Remove "hide" class to enable the page header actions -->
+            <div class="page-actions">
+                <div class="btn-group">
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-share"></i>ARAMA
+                            </a>
+                        </li>
+                        <li class="divider"> </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-flag"></i> Comments
+                                <span class="badge badge-success">4</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon-users"></i> Feedbacks
+                                <span class="badge badge-danger">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END PAGE ACTIONS -->
+            <!-- BEGIN PAGE TOP -->
+            <div class="page-top">
+                <!-- BEGIN HEADER SEARCH BOX -->
+                <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+                <form class="search-form search-form-expanded" action="page_general_search_3.html" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Arama..." name="query">
+                        <span class="input-group-btn">
+                            <a href="javascript:;" class="btn submit">
+                                <i class="icon-magnifier"></i>
+                            </a>
+                        </span>
+                    </div>
+                </form>
+                <!-- END HEADER SEARCH BOX -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+
+                                <i class="icon-user"></i> @Session["KullaniciAdi"]
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-user"></i>PROFİL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_user_lock_1.html">
+                                        <i class="icon-lock"></i>AYARLAR
+                                    </a>
+                                </li>
+                                <li class="divider"> </li>
+
+                                <li>
+                                    <a href="/Giris/LogOut">
+                                        <i class="icon-key"></i>CIKIS
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END PAGE TOP -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- END SIDEBAR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse" style="background-size:300px;">
+                <!-- BEGIN SIDEBAR MENU -->
+                <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+
+                <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <li class="nav-item start ">
+                        <a href="/Kullanici/Index" class="nav-link nav-toggle">
+                            <i class="icon-home"></i>
+                            <span class="title">ANASAYFA</span>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-wrench"></i>
+                            <span class="title">ISLEMLER</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">CALISAN</span>
+                                    <span class="arrow"></span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">MAKİNA</span>
+                                    <span class="arrow"></span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">SIPARIS</span>
+                                    <span class="arrow"></span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link nav-toggle">
+                            <i class="icon-briefcase"></i>
+                            <span class="title">URUNLER</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">URUN1</span>
+                                    <span class="arrow"></span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">URUN2</span>
+                                    <span class="arrow"></span>
+                                </a>
+
+                            </li>
+                            <li class="nav-item  ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <span class="title">URUN3</span>
+                                    <span class="arrow"></span>
+                                </a>
+                            </li>
+                    </li>
+                </ul>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="fa fa-pencil-square-o"></i>
+                        <span class="title">RAPORLAMA</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <span class="title">GELİR-GİDER</span>
+                                <span class="arrow"></span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <span class="title">ARIZA TAKIP</span>
+                                <span class="arrow"></span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <span class="title">CALISAN</span>
+                                <span class="arrow"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <span class="title">SIPARIS</span>
+                                <span class="arrow"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="fa fa-map-marker"></i>
+                        <span class="title">ILETISIM</span>
+                        <span class="arrow"></span>
+                    </a>
+
+
+                </li>
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                <div class="row">
+                    @RenderBody()
+                </div>
+            </div>
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+            <a href="javascript:;" class="page-quick-sidebar-toggler">
+                <i class="icon-login"></i>
+            </a>
+            <div class="page-quick-sidebar-wrapper" data-close-on-body-click="false">
+                <div class="page-quick-sidebar">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab">
+                                Users
+                                <span class="badge badge-danger">2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab">
+                                Alerts
+                                <span class="badge badge-success">7</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                More
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                        <i class="icon-bell"></i> Alerts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                        <i class="icon-info"></i> Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                        <i class="icon-speech"></i> Activities
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                                        <i class="icon-settings"></i> Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        <!--[if lt IE 9]>
+        <script src="assets/global/plugins/respond.min.js"></script>
+        <script src="assets/global/plugins/excanvas.min.js"></script>
+        <![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/apps/scripts/calendar.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="../assets/layouts/layout2/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout2/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+</html>

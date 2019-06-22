@@ -1,0 +1,208 @@
+﻿@{
+    ViewBag.Title = "Calisan";
+    Layout = "~/Layout/AdminLayout.cshtml";
+}  
+<script src="~/assets/global/scripts/jquery-1.7.1.js"></script> 
+<script src="~/Script/aksu.js"></script>
+
+ 
+<script src="~/assets/global/plugins/bootstrap-toastr/toastr.js"></script>
+<link href="~/assets/global/plugins/bootstrap-toastr/toastr.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN EXAMPLE TABLE PORTLET-->
+        <div class="portlet box blue">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-edit"></i>Calisan Tablosu
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse" data-original-title="" title=""></a>
+                    <a href="#portlet-config" data-toggle="modal" class="config" data-original-title="" title=""></a>
+                    <a href="javascript:;" class="reload" data-original-title="" title=""></a>
+                    <a href="javascript:;" class="remove" data-original-title="" title=""></a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-toolbar">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="btn-group">
+                                <a href="#YeniKayit" data-toggle="modal" class="btn green-sharp" onclick="funcNewRecord()">Yeni Kayıt Ekle  <i class="fa fa-plus"></i></a>
+                                <form class="search-form search-form-expanded" action="http://www.keenthemes.com/preview/metronic/theme/templates/admin2/extra_search.html" method="GET">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search..." name="query">
+                                        <span class="input-group-btn">
+                                            <a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr role="row">
+                            <th class="sorting_asc" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+										 Username
+									: activate to sort column ascending"
+                                style="width: 165px;">
+                            Sıra No
+                            </th>
+
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Full Name
+									: activate to sort column ascending"
+                                style="width: 208px;">
+                               Ad
+                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                                style="width: 111px;">
+                           Soyad
+                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                                style="width: 111px;">
+                              E-posta
+                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                                style="width: 111px;">
+                             Yetki
+                            </th>
+
+
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                                style="width: 111px;">
+                                Silme
+                            </th>
+                            <th class="sorting" tabindex="0" aria-controls="sample_editable_1" rowspan="1" colspan="1" aria-label="
+										 Points
+									: activate to sort column ascending"
+                                style="width: 111px;">
+                                Güncelle
+                            </th>
+                       
+
+                        </tr>
+                    </thead>
+                    <tbody id="tablodoldur"></tbody>
+                </table>
+
+            </div>
+        </div>
+        <!-- END EXAMPLE TABLE PORTLET-->
+    </div>
+</div>
+
+
+
+
+<div id="YeniKayit" class="modal fade" aria-hidden="true" style="display: none; width: 70%; left: 14%; top: 13%;">
+    <div class="modal-dialog modal-full">
+        <div class="modal-content" style="">
+            <div class="modal-body" style="padding: 0px;">
+                @Html.Partial("~/Views/Partial/CalisanYeniKayit.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Blokekle" class="modal fade" aria-hidden="true" style="display: none; width: 70%; left: 14%; top: 13%;">
+    <div class="modal-dialog modal-full">
+        <div class="modal-content" style="">
+            <div class="modal-body" style="padding: 0px;">
+                @Html.Partial("~/Views/Partial/CalisanGuncelle.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function texboxtemizleme() {
+        $("input").each(function () {
+            $(this).val("");
+        });
+    }
+
+    function funcNewRecord() {
+        $('#btnSend').attr('onclick', 'funcModalSend(true)');
+    }
+
+    function sil(e) {
+
+        tgAjx('', "/Admin/Calisansil?calisanid=" + e, function (e) { loadgrid(); loadgrid(); });
+    }
+
+    function loadgrid() {
+        tgAjx("", "/Admin/GetSiparis", function (e) {
+            $('#tablodoldur')[0].innerHTML = "";
+            var liste = "";
+
+            for (var i = 0; i < e.length; i++) {
+                liste += "<tr>";
+                liste += "<td>" + (i + 1) + "</td>";
+                liste += " <td>" + e[i].Ad + "</td>";
+                liste += " <td>" + e[i].Soyad + "</td>";
+                liste += "<td>" + e[i].Eposta + "</td>";
+                if(e[i].Yetki==true)
+                    liste += "<td> Admin</td>"
+                else
+                    liste += "<td> Kullanıcı </td>"
+                liste += "<td><Button type='button' class='btn btn-primary'  onclick='sil(" + e[i].ID + ")'>sil</button></td>";
+                liste += "<td>   <Button type='submit' class='btn btn-primary' onclick='update(" + e[i].ID + ")' href='#YeniKayit' data-toggle='modal' >Güncelle </button> </td>";
+            }
+            $('#tablodoldur')[0].innerHTML = liste;
+
+        });
+        tgAjx("", "/Admin/GetCalisma", function (e) {
+            $('#Saatdoldur')[0].innerHTML = "";
+            var option = "";
+            for (var i = 0; i < e.length; i++) {
+                option += "<option value='" + e[i].ID + "'>" + e[i].Baslangic + "-" + e[i].Bitis + "</option>";
+            }
+            $('#Saatdoldur')[0].innerHTML = option;
+        });
+
+    }
+    $(document).ready(function (f) {
+        loadgrid();
+    });
+    var a ;
+    var b;
+    function Getcalisma(e) {
+        tgAjx('', "/Admin/GetCalisma?ID="+e, function (e) {
+           a = e[0].Baslangic;
+           b = e[0].Bitis;
+
+
+
+        });
+    }
+    function update(e) {
+        tgAjx('', "/Admin/GetCalisan?calisanid=" + e, function (e) {
+
+            $('#Id').val(e[0].ID)
+            $('#Ad').val(e[0].Ad),
+            $('#Soyad').val(e[0].Soyad),
+           $('#Adres').val(e[0].Adres),
+             $('#Eposta').val(e[0].Eposta),
+           $("#Telefon").val(e[0].Telefon),
+              $("#unvan").val(e[0].Unvan),
+             $("#gorevac").val(e[0].Gorev),
+           $("#Saatdoldur").val(e[0].CalismaSaatleri);
+        });
+
+        $('#btnSend').attr('onclick', 'funcModalSend(false)');
+
+    }
+</script>
